@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAOLA LOZADA</title>
+    <link rel="shortcut icon" href="img/iconP.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="backgr_one">
+
+        <div class="menuN">
+            <div class="menu">
+                <nav class="menu__nav">
+                    <ul class="menu__list r-list">
+                        <li class="menu__group">
+                            <div class="nameMenu">
+                                <h3>Paola<span>Lozada</span></h3>
+                            </div>
+
+                        </li>
+                        <li class="menu__group">
+                            <a href="#home" class="menu__link r-link">Home</a>
+                        </li>
+                        <li class="menu__group">
+                            <a href="#about" class="menu__link r-link">About me</a>
+                        </li>
+                        <li class="menu__group">
+                            <a href="#projects" class="menu__link r-link">Projects</a>
+                        </li>
+                        <li class="menu__group">
+                            <a href="#skills" class="menu__link r-link">Skills</a>
+                        </li>
+                        <li class="menu__group">
+                            <a href="#contact" class="menu__link r-link">Contact me</a>
+                        </li>
+                        <li>
+                            <div class="contactMenu">
+                                <div class="dataMenu">
+                                    <div><i class="bi bi-telephone-fill"></i>
+                                        <p>+571 3118534588</p>
+                                    </div>
+                                    <div><i class="bi bi-envelope-fill"></i>
+                                        <p class="mail"><a href="mailto:dev@paolozada.com">dev@paolozada.com</a></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="iconsMenu">
+                                    <a href="https://www.linkedin.com/in/paola-a-lozada-g/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                    <a href="https://github.com/PaoLozada" target="_blank"><i class="bi bi-github"></i></a>
+                                    <a href="https://twitter.com/PaolaALoG" target="_blank"><i class="bi bi-twitter"></i></i></a>
+                                </div>
+                            </div>
+
+
+                        </li>
+                    </ul>
+
+                </nav>
+                <button class="menu__toggle r-button" type="button">
+                  <span class="menu__hamburger m-hamburger">
+                    <span class="m-hamburger__label">
+                      <span class="menu__toggle-hint screen-reader">Open menu</span>
+                    </span>
+                  </span>
+                </button>
+            </div>
+        </div>
+        <div class="pres-paola_one row" id="home">
+
+            <div class="word initial col-sm-5">
+                <div class="row">
+                    <div class="col-12">
+                        <span>P</span>
+                        <span>A</span>
+                        <span>O</span>
+                        <span>L</span>
+                        <span>A</span>
+                    </div>
+                    <div class="col-12">
+                        <span>L</span>
+                        <span>O</span>
+                        <span>Z</span>
+                        <span>A</span>
+                        <span>D</span>
+                        <span>A</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col iniComplement">
+                <div class="row">
+
+                    <div class="col-12 greeting">
+                        <div class="hello hi">¡HI!</div>
+                        <div class="hello hi2">
+                            <span> I'm glad to see you</span>
+                        </div>
+                    </div>
+                    <div class="col know">
+                        <div class="row Iam">
+                            <p class="col-md-6 now">Now you can</p>
+                            <b class="col">
+                                <div class="innerIam ">
+                                    <a href="#about"onMouseOver="this.style.cssText='color: #20b2aa'" 
+                                    onMouseOut="this.style.cssText='color: #aaabac'">know who i am</a><br />
+                                    <a href="#skills"onMouseOver="this.style.cssText='color: #20b2aa'" 
+                                    onMouseOut="this.style.cssText='color: #aaabac'">know my skills</a><br />
+                                    <a href="#projects"onMouseOver="this.style.cssText='color: #20b2aa'" 
+                                    onMouseOut="this.style.cssText='color: #aaabac'">See my projects</a><br />
+                                    <a href="#contact"onMouseOver="this.style.cssText='color: #20b2aa'" 
+                                    onMouseOut="this.style.cssText='color: #aaabac'">contact me</a>                          
+
+                                </div>
+                                </b>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--Modal Error-->
+        <div class="modal modalError" id="modalError" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content modalPao">
+
+                    <div class="modal-header">
+                        <div class="optionHeader row">
+                            <h5 class="modal-title">¡OOOPPSSS!</h5>
+                            <label id="modalErrorl">There was an error during execution</label>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bodyChoice">
+                        <p>Please try again. If your query contains filters, you can try changing the values to other valid values.</p>
+                        <p>If it still doesn't work as expected, you can send me a message with the error, and I will send you a virtual gift as a token of appreciation for detecting and reporting it. Thank you.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal" id="modalAgain">Try Again</button>
+                        <a href="mailto:dev@paolozada.com"><button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Send Message</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modals Search Offer Bot -->
+        <div class="modal" id="botSearchoffer" tabindex="-1" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+
+                        <h1 class="modal-title">BOT SAYS: ¡PLEASE WAIT!
+
+                        </h1>
+
+                        <button type="button" class="btn-close pauseOne" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body modalBodyPao" id="bodyModal">
+                        <div class="row content-modal">
+                            <a id="labelModal" target="_blank" class="col-12">Opening Browser</a>
+                            <div id="contenedor_bar" class=" ">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="tableResult" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Execution Result</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal">
+                        <table id="tableModalBSO" class="table table-dark  table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="centered">STORE</th>
+                                    <th class="centered">REF</th>
+                                    <th class="centered">VALUE</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultBSO"></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Search New Products-->
+        <div class="modal fade" id="botNewProducts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Execution Result</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal">
+                        <table id="tableModalBNP" class="table table-dark  table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="centered">NEW PRODUCTS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultBNP"></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search Job-->
+        <div class="modal fade" id="botSearchJob" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Execution Result</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal">
+                        <table id="tableModalBSJ" class="table table-dark  table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="centered">JOB</th>
+                                    <th class="centered">EMPLOYER INF.</th>
+                                    <th class="centered">HOW LONG</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultBSJ"></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search New Products-->
+        <div class="modal fade" id="selectItems" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <div class="optionHeader row">
+                            <h5 class="modal-title">SELECT YOUR OPTION</h5>
+                            <label for="">Default: "Man", "Color", "Gray"</label>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal row bodyChoice">
+                        <div class="selectItemsTot col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" value="7" type="radio" name="itemCheck" id="itemCheck1">
+                                <label class="form-check-label" for="itemCheck1">
+                              Trip
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="2" type="radio" name="itemCheck" id="itemCheck2">
+                                <label class="form-check-label" for="itemCheck2">
+                                    Backpacks
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="3" type="radio" name="itemCheck" id="itemCheck3">
+                                <label class="form-check-label" for="itemCheck3">
+                              Women
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="4" type="radio" name="itemCheck" id="itemCheck4">
+                                <label class="form-check-label" for="itemCheck4">
+                              Man
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="6" type="radio" name="itemCheck" id="itemCheck5">
+                                <label class="form-check-label" for="itemCheck5">
+                              Kids
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="5" type="radio" name="itemCheck" id="itemCheck6">
+                                <label class="form-check-label" for="itemCheck6">
+                                    Accessories
+                            </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 row">
+
+                        </div>
+                        <br/><br/>
+                        <div class="selectItemsTot col-md-6 row">
+                            <div class="form-check  col-6">
+                                <input class="form-check-input" type="radio" value="Color" name="categoryCheck" id="checkColor" onchange="updateSelectColor()">
+                                <label class="form-check-label" for="checkColor">
+                              Color
+                            </label>
+                            </div>
+
+                            <div class="form-check checkPrecio col-6">
+                                <input class="form-check-input" type="radio" value="Precio" name="categoryCheck" id="checkPrice" onchange="updateSelectPrice()">
+                                <label class="form-check-label" for="checkPrice">
+                                    Price
+                            </label>
+                            </div>
+                            <select class="form-select col-12" aria-label="" id="seletTot">
+                                <option value="1" selected>Select Option</option>
+                                <option value="1">-</option>
+                                <option value="2">-</option>
+                                <option value="3">-</option>
+                                <option value="4">-</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" id="executeBNP" data-bs-dismiss="modal">Execute</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search Jobs-->
+        <div class="modal fade" id="selectItemsJobs" tabindex="-1" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <div class="optionHeader row">
+                            <h5 class="modal-title">SELECT YOUR OPTION</h5>
+                            <label>Default: "QA Engineer", "Cundinamarca", "Last week"</label>
+                        </div>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal row bodyChoice">
+                        <div class="selectItemsCom col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" value="1" type="radio" name="itemCheckBSJ" id="itemCheck11">
+                                <label class="form-check-label" for="itemCheck11">
+                                    Urgent
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="4" type="radio" name="itemCheckBSJ" id="itemCheck12">
+                                <label class="form-check-label" for="itemCheck12">
+                                    Last week
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="5" type="radio" name="itemCheckBSJ" id="itemCheck13">
+                                <label class="form-check-label" for="itemCheck13">
+                              Last 15 days
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" value="6" type="radio" name="itemCheckBSJ" id="itemCheck14">
+                                <label class="form-check-label" for="itemCheck14">
+                                    Last month
+                            </label>
+                            </div>
+                        </div>
+                        <div class=" col-md-2 row">
+
+                        </div>
+                        <div class="selectItemsCom col-md-6 row">
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="location" type="text" class="form-control " placeholder="Location " aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                                <input id="job" type="text" class="form-control" placeholder="Job" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" id="executeBSJ" data-bs-dismiss="modal">Execute</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="separatorL separatorOne">
+        <div class="projects row " id="projects">
+            <div class="titleProjects col-sm-2">
+                <h1>My Projects</h1>
+            </div>
+            <div class="accordion accordion-flush accorPao col-sm-8" id="accordionFlushProjects">
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            BOT IN REAL TIME SEARCH-JOBS
+                    </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
+                        <div class="accordion-body">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
+                            <br/> The function of this bot is to access the Computrabajo Colombia website and capture available vacancies according to the desired filters.
+                            <br/><br/><br/>
+                            <div id="carouselBotSearchJob" class="carousel slide botJob">
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/run.gif" alt=" " />
+                                                <figcaption><i class="bi bi-play-circle-fill"></i>
+                                                </figcaption>
+                                                <a class='runapp1' type="button" data-bs-toggle="modal" data-bs-target="#selectItemsJobs"></a>
+
+                                            </figure>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/github2.png" alt=" " />
+                                                <figcaption><i class="bi bi-box-arrow-right"></i>
+                                                </figcaption>
+                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
+                                            </figure>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchJob" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchJob" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                            BOT IN REAL TIME SEARCH-NEW PRODUCTS
+                    </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
+                        <div class="accordion-body ">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
+                            <br/> The function of this bot is to access the Totto website and capture products of the latest collection, according to the filters that are desired.
+                            <br/><br/><br/>
+                            <div id="carouselBotSearchNewProducts" class="carousel slide carTot">
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/run.gif" alt=" " />
+                                                <figcaption><i class="bi bi-play-circle-fill"></i>
+                                                </figcaption>
+                                                <a class='runapp2' type="button" data-bs-toggle="modal" data-bs-target="#selectItems"></a>
+
+                                            </figure>
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/github2.png" alt=" " />
+                                                <figcaption><i class="bi bi-box-arrow-right"></i>
+                                                </figcaption>
+                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
+                                            </figure>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchNewProducts" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchNewProducts" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      BOT IN REAL TIME SEARCH-OFFER
+                    </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
+                        <div class="accordion-body">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
+                            <br/> The function of this bot is to access the Katronix website and capture the name and price of the three most affordable cell phones in real-time.
+                            <br/><br/><br/>
+                            <div id="carouselBotSearchOffer" class="carousel slide carKatr">
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/run.gif" alt=" " />
+                                                <figcaption><i class="bi bi-play-circle-fill"></i>
+                                                </figcaption>
+                                                <a class='runapp3' id="executeBSO" type="button"></a>
+
+                                            </figure>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="congit row">
+                                            <figure class="github-slide col-sm-12">
+                                                <img src="/img/github2.png" alt=" " />
+                                                <figcaption><i class="bi bi-box-arrow-right"></i>
+                                                </figcaption>
+                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
+                                            </figure>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchOffer" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchOffer" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <hr class="separatorR">
+            <div class="row skillPao" id="skills">
+
+
+                <div class="col-sm-9">
+
+                    <div class="slider carouselS">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="img/Tecnologias/css{}.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/github.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/html.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src=" img/Tecnologias/intellij1.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/Java1.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/jmeter.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/js1.jpg" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/katalon1.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/postman.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/python.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/selenium.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/serenity.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/sql.png" alt=" " />
+                            </div>
+                            <div class="slide">
+                                <img src="img/Tecnologias/visualS.png" alt=" " />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-2 titleSkill">
+                    <h1>MY SKILLS</h1>
+                </div>
+            </div>
+
+
+            <div class="row pres_one">
+                <div class="col-md-8 about">
+                    <div id="table">
+                        <div id="centeralign">
+                            <h1 id="about" class=" aboutTitle">About Me</h1>
+                            <p class="aboutDes">Hello there! Welcome to my website! I' m Paola, a systems engineer and programming enthusiast. As a professional, I have worked in the field of test automation, where I have developed a strong passion for quality and efficiency
+                                in software development. My main goal is to contribute to the development of innovative solutions that have a positive impact on people 's lives. I am excited to work on challenging projects that allow me to apply my technical
+                                and creative skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col imgPao">
+                    <img src="/img/paola2.png" alt="">
+                </div>
+            </div>
+
+            <div class="contactMe row" id="contact">
+                <div class="col-md-4 copywri">
+
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+
+                            <div class="frontside">
+                                <div class="cardA">
+                                    <div class="card-body text-center">
+
+                                        <h2 class="card-title">I think you have something very important to tell me!!!!!</h2>
+                                        <h2 href=""><i class="bi bi-box-arrow-in-down-right"></i></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="cardA">
+                                    <div class="card-body text-center mt-4">
+                                        <a class="card-title">If you're interested in collaborating on a project or simply want to have a chat about technology, feel free to contact me. I am thrilled about the opportunities that the future holds and
+                                                    I am ready to take on any challenges that come my way.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-8 formContact">
+                    <form class="myForm" action="https://formsubmit.co/8abd10ad342c19fd87fd12204534c3f6" method="POST" onsubmit="alert( 'Thank you for your message!!!! I will contact you very soon')">
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="name@example.com" name="correo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Name</label>
+                            <input class="form-control" rows="1" name="nombre">
+                            </input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Phone</label>
+                            <input class="form-control" rows="1" name="telefono"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Message</label>
+                            <textarea class="form-control" rows="6" name="mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary btn-lg contactPao">Send Message</button>
+                        <input type="hidden" name="_next" value="https://paolozada.com">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+            </div>
+
+
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+
+                    <h3>Paola<span>Lozada</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#about" class="link-1">About</a>
+
+                        <a href="#skills">Skills</a>
+
+                        <a href="#projects">Projects</a>
+
+                        <a href="#contact">Contact</a>
+                    </p>
+
+
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p> Cundinamarca, Colombia</p>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>+571 3118534588</p>
+                    </div>
+
+                    <div>
+                        <i class="bi bi-envelope-fill"></i>
+                        <p class="mail "><a href="mailto:dev@paolozada.com">dev@paolozada.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>About</span>On this website, you will find a person passionate about challenges and always in search of new opportunities to learn and grow.
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a href="https://www.linkedin.com/in/paola-a-lozada-g/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/PaoLozada" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://twitter.com/PaolaALoG" target="_blank"><i class="bi bi-twitter"></i></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src=" js/declare_vars.js"></script>
+        <script src=" js/modals.js"></script>
+        <script src=" js/progress.js"></script>
+        <script src=" js/execute_bots.js"></script>
+        <script src=" js/bots_apis.js"></script>
+        <script src=" js/scripts.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>
