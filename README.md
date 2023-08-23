@@ -1,1 +1,1 @@
-# portafolio
+Portfolio using only HTML, CSS, and JavaScript. Connected to an app through which the bots displayed on the page are executed.
