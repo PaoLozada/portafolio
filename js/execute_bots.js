@@ -1,9 +1,9 @@
 //Execute Bot Search Offers
-const startButtonBSO = document.getElementById('executeBSO');
+const startButtonBSO = document.getElementsByClassName("executeBSO")[0];
 startButtonBSO.addEventListener('click', () => {
     current_Modal = 'botSearchoffer'
     botName = 'BSO'
-    progressCount = 250
+    progressCount = 270
     openModal('botSearchoffer');
     progress = 0
     createBar();
@@ -14,21 +14,6 @@ startButtonBSO.addEventListener('click', () => {
     executeAsyncFunctionWithProgress(listProduct);
 });
 
-//Execute Bot Search New Products
-const startButtonBNP = document.getElementById('executeBNP');
-startButtonBNP.addEventListener('click', () => {
-    current_Modal = 'selectItems'
-    botName = 'BNP'
-    progressCount = 500
-    openModal('botSearchoffer');
-    progress = 0;
-    createBar();
-    // Start progress bar
-    startProgressBar();
-
-    // Execute asynchronous function with progress bar
-    executeAsyncFunctionWithProgress(newProduct);
-});
 
 //Execute Bot Search Jobs
 const startButtonBSJ = document.getElementById('executeBSJ');
@@ -50,7 +35,9 @@ startButtonBSJ.addEventListener('click', () => {
 
     console.log(input_location + ' El valor capturado es: ' + input_job + ' en tiempo ' + selectItem);
     botName = 'BSJ'
-    progressCount = 500;
+    progressCount = 300;
+    inputLocation.value = ''
+    inputJob.value = ''
     openModal('botSearchoffer');
     progress = 0;
     createBar();
@@ -59,4 +46,29 @@ startButtonBSJ.addEventListener('click', () => {
 
     // Execute asynchronous function with progress bar
     executeAsyncFunctionWithProgress(searchJob);
+});
+
+//Execute Bot Search Views
+const startButtonBSV = document.getElementById('executeBSV');
+let inputViews = document.getElementById('name_video');
+
+startButtonBSV.addEventListener('click', () => {
+    current_Modal = 'selectItemsViews'
+    if (inputViews.value == '') {
+        input_name_video = 'QA Automation'
+    } else {
+        input_name_video = inputViews.value;
+    }
+    console.log('El valor capturado es: ' + input_name_video);
+    botName = 'BSV'
+    progressCount = 250;
+    inputViews.value = ''
+    openModal('botSearchoffer');
+    progress = 0;
+    createBar();
+    // Start progress bar
+    startProgressBar();
+
+    // Execute asynchronous function with progress bar
+    executeAsyncFunctionWithProgress(searchViews);
 });

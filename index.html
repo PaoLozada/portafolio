@@ -4,129 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Hello there! Welcome to my website! I'm Paola, a systems engineer and programming enthusiast.">
+
     <title>PAOLA LOZADA</title>
-    <link rel="shortcut icon" href="img/iconP.png">
+
+    <link rel="shortcut icon" href="img/LOGO_PAO/iconPL.webp">
+    <link rel="icon" type="image/png" href="img/LOGO_PAO/iconPL.webp">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "person",
+          "name": "paolozada",
+          "url": "https://paolozada.com/",
+          "logo": "https://paolozada.com/img/LOGO_PAO/iconPL.webp",
+          "sameAs": [
+            "https://www.linkedin.com/in/paola-a-lozada-g/",
+            "https://github.com/PaoLozada"
+          ]
+        }
+    </script>
 </head>
 
 <body>
-    <div class="backgr_one">
+    <div class="filter_body">
 
-        <div class="menuN">
-            <div class="menu">
-                <nav class="menu__nav">
-                    <ul class="menu__list r-list">
-                        <li class="menu__group">
-                            <div class="nameMenu">
-                                <h3>Paola<span>Lozada</span></h3>
-                            </div>
+        <nav class="floating-menu">
+            <a href="#home" data-tooltip="img/Links/home_ok.png">
+                <img class="img_nav" src="img/Links/home_I.png" alt="Home">
+            </a>
 
-                        </li>
-                        <li class="menu__group">
-                            <a href="#home" class="menu__link r-link">Home</a>
-                        </li>
-                        <li class="menu__group">
-                            <a href="#about" class="menu__link r-link">About me</a>
-                        </li>
-                        <li class="menu__group">
-                            <a href="#projects" class="menu__link r-link">Projects</a>
-                        </li>
-                        <li class="menu__group">
-                            <a href="#skills" class="menu__link r-link">Skills</a>
-                        </li>
-                        <li class="menu__group">
-                            <a href="#contact" class="menu__link r-link">Contact me</a>
-                        </li>
-                        <li>
-                            <div class="contactMenu">
-                                <div class="dataMenu">
-                                    <div><i class="bi bi-telephone-fill"></i>
-                                        <p>+571 3118534588</p>
-                                    </div>
-                                    <div><i class="bi bi-envelope-fill"></i>
-                                        <p class="mail"><a href="mailto:dev@paolozada.com">dev@paolozada.com</a></p>
-                                    </div>
+            <a href="#projects" data-tooltip="img/Links/projects.png">
+                <img class="img_nav" src="img/Links/projects_I.png" alt="Projects">
+            </a>
+            <a href="#about" data-tooltip="img/Links/about.png">
+                <img class="img_nav" src="img/Links/about_I.png" alt="About">
+            </a>
+            <a href="#skills" data-tooltip="img/Links/skills.png">
+                <img class="img_nav" src="img/Links/skills_I.png" alt="Skills">
+            </a>
+            <a href="#blog" data-tooltip="img/Links/Blog.png">
+                <img class="img_nav" src="img/Links/Blog_I.png" alt="Blog">
+            </a>
 
-                                </div>
+            <a href="#contact" data-tooltip="img/Links/contacto.png">
+                <img class="img_nav" src="img/Links/contacto_I.png" alt="Contact">
+            </a>
+        </nav>
 
-                                <div class="iconsMenu">
-                                    <a href="https://www.linkedin.com/in/paola-a-lozada-g/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                                    <a href="https://github.com/PaoLozada" target="_blank"><i class="bi bi-github"></i></a>
-                                    <a href="https://twitter.com/PaolaALoG" target="_blank"><i class="bi bi-twitter"></i></i></a>
-                                </div>
-                            </div>
+        <!-- contenedor del tooltip -->
+        <div class="tooltip-img"></div>
 
-
-                        </li>
-                    </ul>
-
-                </nav>
-                <button class="menu__toggle r-button" type="button">
-                  <span class="menu__hamburger m-hamburger">
-                    <span class="m-hamburger__label">
-                      <span class="menu__toggle-hint screen-reader">Open menu</span>
-                    </span>
-                  </span>
-                </button>
+        <header id="home" class="element_anim">
+            <button id="toggle-theme">🌙/☀️</button>
+            <div class="hero">
+                <div class="word col-sm-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <span>P</span>
+                            <span>A</span>
+                            <span>O</span>
+                            <span>L</span>
+                            <span>A</span>
+                        </div>
+                        <div class="col-12">
+                            <span>L</span>
+                            <span>O</span>
+                            <span>Z</span>
+                            <span>A</span>
+                            <span>D</span>
+                            <span>A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Modals Description bot -->
+        <div class="modal fade" id="description_bot_search" tabindex="-1" aria-labelledby="description_bot_search">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal_descri">
+                    <div>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">BOT EN TIEMPO REAL – BÚSQUEDA DE OFERTAS
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Automatización en <span class="badge bg-dark">Python</span> + <span
+                                class="badge bg-info text-dark">Selenium</span> ⚡
+                        </p>
+                        <p>
+                            Este bot corre en segundo plano y consulta en tiempo real el sitio web de
+                            <strong>Katronix</strong>.
+                        </p>
+                        <p>
+                            Su misión: detectar y listar los <strong>3 celulares más económicos</strong> disponibles en
+                            ese momento, mostrando <em>nombre y precio</em>.
+                        </p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="pres-paola_one row" id="home">
 
-            <div class="word initial col-sm-5">
-                <div class="row">
-                    <div class="col-12">
-                        <span>P</span>
-                        <span>A</span>
-                        <span>O</span>
-                        <span>L</span>
-                        <span>A</span>
+        <div class="modal fade" id="description_bot_job" tabindex="-1" aria-labelledby="description_bot_job">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal_descri">
+                    <div>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">BOT EN TIEMPO REAL – BÚSQUEDA DE EMPLEO
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col-12">
-                        <span>L</span>
-                        <span>O</span>
-                        <span>Z</span>
-                        <span>A</span>
-                        <span>D</span>
-                        <span>A</span>
+                    <div class="modal-body">
+                        <p>
+                            Automatización en <span class="badge bg-dark">Python</span> + <span
+                                class="badge bg-info text-dark">Selenium</span> ⚡
+                        </p>
+                        <p>
+                            Este bot se ejecuta en segundo plano y consulta en tiempo real el portal
+                            <strong>Computrabajo Colombia</strong>.
+                        </p>
+                        <p>
+                            Su misión: extraer <strong>vacantes disponibles</strong> aplicando los filtros que el
+                            usuario necesite.
+                        </p>
                     </div>
 
+                    <div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
-
-
             </div>
-            <div class="col iniComplement">
-                <div class="row">
+        </div>
 
-                    <div class="col-12 greeting">
-                        <div class="hello hi">¡HI!</div>
-                        <div class="hello hi2">
-                            <span> I'm glad to see you</span>
-                        </div>
+        <div class="modal fade" id="description_bot_views" tabindex="-1" aria-labelledby="description_bot_views">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal_descri">
+                    <div>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">BOT EN TIEMPO REAL – CONSULTA DE
+                            VISUALIZACIONES
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="col know">
-                        <div class="row Iam">
-                            <p class="col-md-6 now">Now you can</p>
-                            <b class="col">
-                                <div class="innerIam ">
-                                    <a href="#about"onMouseOver="this.style.cssText='color: #20b2aa'" 
-                                    onMouseOut="this.style.cssText='color: #aaabac'">know who i am</a><br />
-                                    <a href="#skills"onMouseOver="this.style.cssText='color: #20b2aa'" 
-                                    onMouseOut="this.style.cssText='color: #aaabac'">know my skills</a><br />
-                                    <a href="#projects"onMouseOver="this.style.cssText='color: #20b2aa'" 
-                                    onMouseOut="this.style.cssText='color: #aaabac'">See my projects</a><br />
-                                    <a href="#contact"onMouseOver="this.style.cssText='color: #20b2aa'" 
-                                    onMouseOut="this.style.cssText='color: #aaabac'">contact me</a>                          
-
-                                </div>
-                                </b>
+                    <div class="modal-body">
+                        <div class="modal-body">
+                            <p>
+                                Automatización en <span class="badge bg-dark">Python</span> + <span
+                                    class="badge bg-info text-dark">Selenium</span> ⚡
+                            </p>
+                            <p>
+                                Este bot consulta en tiempo real <strong>YouTube</strong> y obtiene el <strong>número de
+                                    visualizaciones</strong> del video que el usuario indique.
+                            </p>
+                            <p>
+                                La búsqueda no distingue tildes ni mayúsculas, pero respeta todos los caracteres
+                                escritos (letras, números y símbolos).
+                            </p>
                         </div>
+
                     </div>
+                    <div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <!---modal-video-->
+        <div class="modal fade" id="modal_video_qa" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <video id="video_qa" src="https://paolozada.com/info/wp-content/uploads/2025/07/Version_3.mp4"
+                        allowFullScreen="true" controls="controls"></video>
                 </div>
             </div>
         </div>
@@ -138,37 +199,42 @@
                     <div class="modal-header">
                         <div class="optionHeader row">
                             <h5 class="modal-title">¡OOOPPSSS!</h5>
-                            <label id="modalErrorl">There was an error during execution</label>
+                            <label id="modalErrorl">Ocurrió un error durante la ejecución</label>
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body bodyChoice">
-                        <p>Please try again. If your query contains filters, you can try changing the values to other valid values.</p>
-                        <p>If it still doesn't work as expected, you can send me a message with the error, and I will send you a virtual gift as a token of appreciation for detecting and reporting it. Thank you.</p>
+                        <p>Por favor, intenta nuevamente. Si tu consulta tiene filtros, prueba cambiarlos por otros
+                            valores válidos.</p>
+                        <p>Si aún no funciona como esperas, puedes enviarme un mensaje con el error y te enviaré un
+                            regalo virtual 🎁 como agradecimiento por detectarlo y compartirlo. ¡Gracias!
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal" id="modalAgain">Try Again</button>
-                        <a href="mailto:dev@paolozada.com"><button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Send Message</button></a>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal" id="modalAgain">Intentar de
+                            nuevo</button>
+                        <a href="mailto:dev@paolozada.com"><button class="btn btn-primary buttonModal"
+                                data-bs-dismiss="modal">Enviar mensaje</button></a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modals Search Offer Bot -->
-        <div class="modal" id="botSearchoffer" tabindex="-1" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal" id="botSearchoffer" tabindex="-1" data-mdb-backdrop="true" data-mdb-keyboard="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content modalPao">
                     <div class="modal-header">
 
-                        <h1 class="modal-title">BOT SAYS: ¡PLEASE WAIT!
+                        <h1 class="modal-title">BOT DICE: ¡POR FAVOR, ESPERA!
 
                         </h1>
 
-                        <button type="button" class="btn-close pauseOne" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close pauseOne" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body modalBodyPao" id="bodyModal">
                         <div class="row content-modal">
-                            <a id="labelModal" target="_blank" class="col-12">Opening Browser</a>
+                            <a id="labelModal" target="_blank" class="col-12">Abriendo navegador...</a>
                             <div id="contenedor_bar" class=" ">
                             </div>
 
@@ -178,175 +244,85 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="tableResult" aria-hidden="true" tabindex="-1">
+        <div class="modal fade" id="tableResult" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content modalPao">
                     <div class="modal-header">
-                        <h5 class="modal-title">Execution Result</h5>
+                        <h5 class="modal-title">Resultado</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body content-modal">
                         <table id="tableModalBSO" class="table table-dark  table-striped">
                             <thead>
                                 <tr>
-                                    <th class="centered">STORE</th>
-                                    <th class="centered">REF</th>
-                                    <th class="centered">VALUE</th>
+                                    <th class="centered">TIENDA</th>
+                                    <th class="centered">REFERENCIA</th>
+                                    <th class="centered">VALOR</th>
                                 </tr>
                             </thead>
                             <tbody id="resultBSO"></tbody>
                         </table>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Search New Products-->
-        <div class="modal fade" id="botNewProducts" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content modalPao">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Execution Result</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body content-modal">
-                        <table id="tableModalBNP" class="table table-dark  table-striped">
-                            <thead>
-                                <tr>
-                                    <th class="centered">NEW PRODUCTS</th>
-                                </tr>
-                            </thead>
-                            <tbody id="resultBNP"></tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal Search Job-->
-        <div class="modal fade" id="botSearchJob" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal fade" id="botSearchJob" tabindex="-1" aria-labelledby="">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content modalPao">
                     <div class="modal-header">
-                        <h5 class="modal-title">Execution Result</h5>
+                        <h5 class="modal-title">Resultado</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body content-modal">
                         <table id="tableModalBSJ" class="table table-dark  table-striped">
                             <thead>
                                 <tr>
-                                    <th class="centered">JOB</th>
-                                    <th class="centered">EMPLOYER INF.</th>
-                                    <th class="centered">HOW LONG</th>
+                                    <th class="centered">Empleo</th>
+                                    <th class="centered">Empleador</th>
+                                    <th class="centered">Publicado</th>
                                 </tr>
                             </thead>
                             <tbody id="resultBSJ"></tbody>
                         </table>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search New Products-->
-        <div class="modal fade" id="selectItems" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <!-- Modal Search Views-->
+        <div class="modal fade" id="botSearchViews" tabindex="-1" aria-labelledby="">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content modalPao">
                     <div class="modal-header">
-                        <div class="optionHeader row">
-                            <h5 class="modal-title">SELECT YOUR OPTION</h5>
-                            <label for="">Default: "Man", "Color", "Gray"</label>
-                        </div>
+                        <h5 class="modal-title">Resultado</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body content-modal row bodyChoice">
-                        <div class="selectItemsTot col-md-4">
-                            <div class="form-check">
-                                <input class="form-check-input" value="7" type="radio" name="itemCheck" id="itemCheck1">
-                                <label class="form-check-label" for="itemCheck1">
-                              Trip
-                            </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" value="2" type="radio" name="itemCheck" id="itemCheck2">
-                                <label class="form-check-label" for="itemCheck2">
-                                    Backpacks
-                            </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" value="3" type="radio" name="itemCheck" id="itemCheck3">
-                                <label class="form-check-label" for="itemCheck3">
-                              Women
-                            </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" value="4" type="radio" name="itemCheck" id="itemCheck4">
-                                <label class="form-check-label" for="itemCheck4">
-                              Man
-                            </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" value="6" type="radio" name="itemCheck" id="itemCheck5">
-                                <label class="form-check-label" for="itemCheck5">
-                              Kids
-                            </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" value="5" type="radio" name="itemCheck" id="itemCheck6">
-                                <label class="form-check-label" for="itemCheck6">
-                                    Accessories
-                            </label>
-                            </div>
-                        </div>
-                        <div class=" col-md-2 row">
+                    <div class="modal-body content-modal">
+                        <table id="tableModalBSJ" class="table table-dark  table-striped">
 
-                        </div>
-                        <br/><br/>
-                        <div class="selectItemsTot col-md-6 row">
-                            <div class="form-check  col-6">
-                                <input class="form-check-input" type="radio" value="Color" name="categoryCheck" id="checkColor" onchange="updateSelectColor()">
-                                <label class="form-check-label" for="checkColor">
-                              Color
-                            </label>
-                            </div>
-
-                            <div class="form-check checkPrecio col-6">
-                                <input class="form-check-input" type="radio" value="Precio" name="categoryCheck" id="checkPrice" onchange="updateSelectPrice()">
-                                <label class="form-check-label" for="checkPrice">
-                                    Price
-                            </label>
-                            </div>
-                            <select class="form-select col-12" aria-label="" id="seletTot">
-                                <option value="1" selected>Select Option</option>
-                                <option value="1">-</option>
-                                <option value="2">-</option>
-                                <option value="3">-</option>
-                                <option value="4">-</option>
-                              </select>
-                        </div>
+                            <tbody id="resultBSV"></tbody>
+                        </table>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" id="executeBNP" data-bs-dismiss="modal">Execute</button>
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Search Jobs-->
-        <div class="modal fade" id="selectItemsJobs" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <!-- Modal Search item Jobs-->
+        <div class="modal fade" id="selectItemsJobs" tabindex="-1" aria-labelledby="">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content modalPao">
                     <div class="modal-header">
                         <div class="optionHeader row">
-                            <h5 class="modal-title">SELECT YOUR OPTION</h5>
-                            <label>Default: "QA Engineer", "Cundinamarca", "Last week"</label>
+                            <h5 class="modal-title">SELECCIONA UNA OPCIÓN</h5>
+                            <label>Predt.: "Ingeniero QA", "Cundinamarca", "Última semana"</label>
                         </div>
 
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -354,28 +330,32 @@
                     <div class="modal-body content-modal row bodyChoice">
                         <div class="selectItemsCom col-md-4">
                             <div class="form-check">
-                                <input class="form-check-input" value="1" type="radio" name="itemCheckBSJ" id="itemCheck11">
+                                <input class="form-check-input" value="1" type="radio" name="itemCheckBSJ"
+                                    id="itemCheck11">
                                 <label class="form-check-label" for="itemCheck11">
-                                    Urgent
+                                    Urgente
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" value="4" type="radio" name="itemCheckBSJ" id="itemCheck12">
+                                <input class="form-check-input" value="4" type="radio" name="itemCheckBSJ"
+                                    id="itemCheck12">
                                 <label class="form-check-label" for="itemCheck12">
-                                    Last week
-                            </label>
+                                    Última semana
+                                </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" value="5" type="radio" name="itemCheckBSJ" id="itemCheck13">
+                                <input class="form-check-input" value="5" type="radio" name="itemCheckBSJ"
+                                    id="itemCheck13">
                                 <label class="form-check-label" for="itemCheck13">
-                              Last 15 days
-                            </label>
+                                    Últimos 15 días
+                                </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" value="6" type="radio" name="itemCheckBSJ" id="itemCheck14">
+                                <input class="form-check-input" value="6" type="radio" name="itemCheckBSJ"
+                                    id="itemCheck14">
                                 <label class="form-check-label" for="itemCheck14">
-                                    Last month
-                            </label>
+                                    Último mes
+                                </label>
                             </div>
                         </div>
                         <div class=" col-md-2 row">
@@ -383,372 +363,1169 @@
                         </div>
                         <div class="selectItemsCom col-md-6 row">
                             <div class="input-group input-group-sm mb-3">
-                                <input id="location" type="text" class="form-control " placeholder="Location " aria-describedby="inputGroup-sizing-sm">
+                                <input id="location" type="text" class="form-control " placeholder="Lugar"
+                                    aria-describedby="inputGroup-sizing-sm">
                             </div>
                             <div class="input-group input-group-sm mb-3">
-                                <input id="job" type="text" class="form-control" placeholder="Job" aria-describedby="inputGroup-sizing-sm">
+                                <input id="job" type="text" class="form-control" placeholder="Empleo"
+                                    aria-describedby="inputGroup-sizing-sm">
                             </div>
 
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-primary buttonModal" id="executeBSJ" data-bs-dismiss="modal">Execute</button>
-                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary buttonModal" id="executeBSJ"
+                            data-bs-dismiss="modal">Ejecutar</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="separatorL separatorOne">
-        <div class="projects row " id="projects">
-            <div class="titleProjects col-sm-2">
-                <h1>My Projects</h1>
-            </div>
-            <div class="accordion accordion-flush accorPao col-sm-8" id="accordionFlushProjects">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      BOT IN REAL TIME SEARCH-OFFER
-                    </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
-                        <div class="accordion-body">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
-                            <br/> The function of this bot is to access the Katronix website and capture the name and price of the three most affordable cell phones in real-time.
-                            <br/><br/><br/>
-                            <div id="carouselBotSearchOffer" class="carousel slide carKatr">
+        <!-- Modal Search item Views-->
+        <div class="modal fade" id="selectItemsViews" tabindex="-1" aria-labelledby="">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modalPao">
+                    <div class="modal-header">
+                        <div class="optionHeader row">
+                            <h5 class="modal-title">Escribe el nombre del video que quieres consultar</h5>
+                            <label>Predt.: "Automatización QA"</label>
+                        </div>
 
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/run.gif" alt=" " />
-                                                <figcaption><i class="bi bi-play-circle-fill"></i>
-                                                </figcaption>
-                                                <a class='runapp3' id="executeBSO" type="button"></a>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body content-modal row bodyChoice">
 
-                                            </figure>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/github2.png" alt=" " />
-                                                <figcaption><i class="bi bi-box-arrow-right"></i>
-                                                </figcaption>
-                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
-                                            </figure>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchOffer" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchOffer" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
+                        <div class="selectItemsCom col-sm-12 row">
+                            <div class="input-group input-group-lg mb-3">
+                                <input id="name_video" type="text" class="form-control " placeholder="Nombre vídeo">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                            BOT IN REAL TIME SEARCH-NEW PRODUCTS
-                    </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
-                        <div class="accordion-body ">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
-                            <br/> The function of this bot is to access the Totto website and capture products of the latest collection, according to the filters that are desired.
-                            <br/><br/><br/>
-                            <div id="carouselBotSearchNewProducts" class="carousel slide carTot">
-
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/run.gif" alt=" " />
-                                                <figcaption><i class="bi bi-play-circle-fill"></i>
-                                                </figcaption>
-                                                <a class='runapp2' type="button" data-bs-toggle="modal" data-bs-target="#selectItems"></a>
-
-                                            </figure>
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/github2.png" alt=" " />
-                                                <figcaption><i class="bi bi-box-arrow-right"></i>
-                                                </figcaption>
-                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
-                                            </figure>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchNewProducts" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchNewProducts" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            BOT IN REAL TIME SEARCH-JOBS
-                    </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushProjects">
-                        <div class="accordion-body">This bot runs in the background in real-time through a <code>GET</code> request. It is built in <code>Python</code> and <code>Selenium</code>.
-                            <br/> The function of this bot is to access the Computrabajo Colombia website and capture available vacancies according to the desired filters.
-                            <br/><br/><br/>
-                            <div id="carouselBotSearchJob" class="carousel slide botJob">
-
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/run.gif" alt=" " />
-                                                <figcaption><i class="bi bi-play-circle-fill"></i>
-                                                </figcaption>
-                                                <a class='runapp1' type="button" data-bs-toggle="modal" data-bs-target="#selectItemsJobs"></a>
-
-                                            </figure>
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-item">
-                                        <div class="congit row">
-                                            <figure class="github-slide col-sm-12">
-                                                <img src="/img/github2.png" alt=" " />
-                                                <figcaption><i class="bi bi-box-arrow-right"></i>
-                                                </figcaption>
-                                                <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"></a>
-                                            </figure>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBotSearchJob" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBotSearchJob" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                            </div>
-                        </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary buttonModal" id="executeBSV"
+                            data-bs-dismiss="modal">Ejecutar</button>
+                        <button class="btn btn-primary buttonModal" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
-            <hr class="separatorR">
-            <div class="row skillPao" id="skills">
-
-
-                <div class="col-sm-9">
-
-                    <div class="slider carouselS">
-                        <div class="slide-track">
-                            <div class="slide">
-                                <img src="img/Tecnologias/css{}.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/github.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/html.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src=" img/Tecnologias/intellij1.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/Java1.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/jmeter.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/js1.jpg" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/katalon1.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/postman.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/python.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/selenium.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/serenity.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/sql.png" alt=" " />
-                            </div>
-                            <div class="slide">
-                                <img src="img/Tecnologias/visualS.png" alt=" " />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-sm-2 titleSkill">
-                    <h1>MY SKILLS</h1>
-                </div>
-            </div>
-
-
-            <div class="row pres_one">
-                <div class="col-md-8 about">
-                    <div id="table">
-                        <div id="centeralign">
-                            <h1 id="about" class=" aboutTitle">About Me</h1>
-                            <p class="aboutDes">Hello there! Welcome to my website! I' m Paola, a systems engineer and programming enthusiast. As a professional, I have worked in the field of test automation, where I have developed a strong passion for quality and efficiency
-                                in software development. My main goal is to contribute to the development of innovative solutions that have a positive impact on people 's lives. I am excited to work on challenging projects that allow me to apply my technical
-                                and creative skills.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col imgPao">
-                    <img src="/img/paola2.png" alt="">
-                </div>
-            </div>
-
-            <div class="contactMe row" id="contact">
-                <div class="col-md-4 copywri">
-
-                    <div class="image-flip">
-                        <div class="mainflip flip-0">
-
-                            <div class="frontside">
-                                <div class="cardA">
-                                    <div class="card-body text-center">
-
-                                        <h2 class="card-title">I think you have something very important to tell me!!!!!</h2>
-                                        <h2 href=""><i class="bi bi-box-arrow-in-down-right"></i></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="cardA">
-                                    <div class="card-body text-center mt-4">
-                                        <a class="card-title">If you're interested in collaborating on a project or simply want to have a chat about technology, feel free to contact me. I am thrilled about the opportunities that the future holds and
-                                                    I am ready to take on any challenges that come my way.</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-8 formContact">
-                    <form class="myForm" action="https://formsubmit.co/8abd10ad342c19fd87fd12204534c3f6" method="POST" onsubmit="alert( 'Thank you for your message!!!! I will contact you very soon')">
-
-                        <div class="mb-3">
-                            <label for="" class="form-label">Email address</label>
-                            <input type="email" class="form-control" placeholder="name@example.com" name="correo" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Name</label>
-                            <input class="form-control" rows="1" name="nombre">
-                            </input>
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Phone</label>
-                            <input class="form-control" rows="1" name="telefono"></input>
-                        </div>
-                        <div class="mb-3">
-                            <label for="" class="form-label">Message</label>
-                            <textarea class="form-control" rows="6" name="mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-outline-primary btn-lg contactPao">Send Message</button>
-                        <input type="hidden" name="_next" value="https://paolozada.com">
-                        <input type="hidden" name="_captcha" value="false">
-                    </form>
-                </div>
-            </div>
-
-
-            <footer class="footer-distributed">
-
-                <div class="footer-left">
-
-                    <h3>Paola<span>Lozada</span></h3>
-
-                    <p class="footer-links">
-                        <a href="#about" class="link-1">About</a>
-
-                        <a href="#skills">Skills</a>
-
-                        <a href="#projects">Projects</a>
-
-                        <a href="#contact">Contact</a>
-                    </p>
-
-
-                </div>
-
-                <div class="footer-center">
-
-                    <div>
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <p> Cundinamarca, Colombia</p>
-                    </div>
-
-                    <div>
-                        <i class="bi bi-telephone-fill"></i>
-                        <p>+571 3118534588</p>
-                    </div>
-
-                    <div>
-                        <i class="bi bi-envelope-fill"></i>
-                        <p class="mail "><a href="mailto:dev@paolozada.com">dev@paolozada.com</a></p>
-                    </div>
-
-                </div>
-
-                <div class="footer-right">
-
-                    <p class="footer-company-about">
-                        <span>About</span>On this website, you will find a person passionate about challenges and always in search of new opportunities to learn and grow.
-                    </p>
-
-                    <div class="footer-icons">
-
-                        <a href="https://www.linkedin.com/in/paola-a-lozada-g/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/PaoLozada" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://twitter.com/PaolaALoG" target="_blank"><i class="bi bi-twitter"></i></i></a>
-
-                    </div>
-
-                </div>
-
-            </footer>
         </div>
+
+        <main>
+            <!-- Work Section -->
+            <section class="work-section" id="projects">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Algunas cosas que he creado</h2>
+                        <p class="section-subtitle">Ideas hechas realidad</p>
+                    </div>
+                    <section class="qa_assitant">
+                        <div class="content_qa">
+                            <div class="textBox">
+                                <h2>Asistente QA con IA <span>QAssistant</span></h2>
+                                <p>Una herramienta impulsada por inteligencia artificial que transforma la forma de
+                                    planificar pruebas, facilita la definición de riesgos, objetivos y estimaciones,
+                                    ofreciendo un comienzo
+                                    claro y estructurado en lugar de una hoja en blanco.
+                                </p></br>
+                                <a href="https://appqa.paolozada.com/" target="_blank" class="button"><img
+                                        class="button_bot-image" src="img/Links/QAssistant_I.png"
+                                        alt="QAssitant Paola_Lozada" /> Probar ahora</a>
+                            </div>
+                            <div class="imgBox_qa element_anim">
+                                <img src="img/Links/Blog_I.png" class="media_qa right-element">
+                            </div>
+                        </div>
+
+                        <ul class="thumb_qa">
+                            <li onclick="imgSlider('img/qa_assistant/note_f.png')">
+                                <img src="img/qa_assistant/note_f.png" alt="">
+                            </li>
+                            <li onclick="imgSlider('img/qa_assistant/note_g.png')">
+                                <img src="img/qa_assistant/note_g.png" alt="">
+                            </li>
+                            <li onclick="imgSlider('img/qa_assistant/note_a.png')">
+                                <img src="img/qa_assistant/note_a.png" alt="">
+                            </li>
+                            <li onclick="imgSlider('img/qa_assistant/note_d.png')">
+                                <img src="img/qa_assistant/note_d.png" alt="">
+                            </li>
+                        </ul>
+
+                    </section>
+                </div>
+
+                <div class="l-hero-video">
+                    <div class="l-hero-video__video btn" data-bs-toggle="modal" data-bs-target="#modal_video_qa">
+                        <video class="l-hero-video__video-inner" loop muted autoplay playsinline poster="">
+                            <source src="https://paolozada.com/info/wp-content/uploads/2025/07/Version_3.mp4"
+                                type="video/mp4">
+                        </video>
+                        <button data-bs-toggle="modal" data-bs-target="#modal_video_qa" class="play-btn"><i
+                                class="bi bi-play-circle-fill"></i></button>
+                    </div>
+                    <div class="l-hero-video__pulled">
+                        <div class="l-hero-video__pulled-inner">
+                            <div class="c-card">
+                                <svg class="c-card__item c-card__title" height="1.3em" width="100%">
+                                    <mask id="mask-title">
+                                        <rect height="100%" width="100%" fill="#fff" />
+                                        <rect height="5px" width="100%" />
+                                        <text y="78%" fill="#111111">QAssistant</text>
+                                        <rect y="100%" height="5px" width="100%" transform="translate(0, -5)" />
+                                    </mask>
+                                    <rect class="rect" width="100%" height="100%" mask="url(#mask-title)" />
+                                </svg>
+                                <p class="c-card__item c-card__copy">
+                                    Facilita el camino:</br>
+                                    <i class="bi bi-rocket" style="color: #AA8996;"></i> Crear planes sin empezar de
+                                    cero.</br>
+                                    <i class="bi bi-emoji-sunglasses" style="color: #AA8996;"></i></i> Visualizar lo
+                                    importante desde el inicio.</br>
+                                    <i class="bi bi-lightbulb" style="color: #AA8996;"></i> Usar la IA como copiloto
+                                    para estructurar cualquier idea.</br></br>
+                                    🎬 Dale play al video para ver cómo funciona esta herramienta
+                                </p>
+                                <a href="https://paolozada.com/info/planes-de-prueba-con-ia/" target="_blank"
+                                    class="link">
+                                    <svg viewBox='0 0 200 200' width='200' height='200'
+                                        xmlns='http://www.w3.org/2000/svg' class="link__svg"
+                                        aria-labelledby="link1-title link1-desc">
+                                        <path id="link-circle" class="link__path"
+                                            d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none"
+                                            fill="none" />
+                                        <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"
+                                            fill="none" />
+                                        <text class="link__text">
+                                            <textPath href="#link-circle" stroke="none">
+                                                Leer el articulo completo
+                                            </textPath>
+                                        </text>
+                                    </svg>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="work-section section-grid" id="projects">
+                <div class="section-container">
+                    <h1 class="t-bot" title="Pequeños Bots que extraen datos en tiempo real.">Smart Bots</h1>
+
+                    <div class="container_project">
+                        <div class="slide_work anim-in">
+                            <div class="image" style="background-image: url(img/Projects/katronix.png);">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1 class="title" data-title="Search Offer">Search Offer</h1>
+                                <ul class="bot-info">
+                                    <div class="btn-group">
+                                        <button class="button_bot" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#description_bot_search">
+                                            <img class="button_bot-image" src="img/Projects/funcionamiento.png"
+                                                alt="" />
+                                            <span>¿Cómo funciona?</span>
+                                        </button>
+                                        <button class="button_bot runapp3 executeBSO" type="button">
+                                            <img class="button_bot-image" src="img/Projects/Ejecutar.png" alt="" />
+                                            <span>Ejecutar</span>
+                                        </button>
+                                        <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"
+                                            class="button_bot">
+                                            <img class="button_bot-image" src="img/Projects/github_bot.png"
+                                                alt="GitHub" />
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="btn-close"></div>
+                        </div>
+                        <div class="slide_work anim-in">
+                            <div class="image" style="background-image: url(img/Projects/job.png);">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1 class="title" data-title="Search Jobs">Search Jobs</h1>
+                                <ul class="bot-info">
+                                    <div class="btn-group">
+                                        <button class="button_bot" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#description_bot_job">
+                                            <img class="button_bot-image" src="img/Projects/funcionamiento.png"
+                                                alt="" />
+                                            <span>¿Cómo funciona?</span>
+                                        </button>
+                                        <button class="button_bot runapp1" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#selectItemsJobs">
+                                            <img class="button_bot-image" src="img/Projects/Ejecutar.png" alt="" />
+                                            <span>Ejecutar</span>
+                                        </button>
+                                        <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"
+                                            class="button_bot">
+                                            <img class="button_bot-image" src="img/Projects/github_bot.png"
+                                                alt="GitHub" />
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="btn-close"></div>
+                        </div>
+                        <div class="slide_work anim-in">
+                            <div class="image" style="background-image: url(img/Projects/ytb.png);">
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="content">
+                                <h1 class="title" data-title="Search Views">Search Views</h1>
+                                <ul class="bot-info">
+                                    <div class="btn-group">
+                                        <button class="button_bot" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#description_bot_views">
+                                            <img class="button_bot-image" src="img/Projects/funcionamiento.png"
+                                                alt="" />
+                                            <span>¿Cómo funciona?</span>
+                                        </button>
+                                        <button class="button_bot runapp4" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#selectItemsViews">
+                                            <img class="button_bot-image" src="img/Projects/Ejecutar.png" alt="" />
+                                            <span>Ejecutar</span>
+                                        </button>
+                                        <a href="https://github.com/PaoLozada/Botsapp.git" target="_blank"
+                                            class="button_bot">
+                                            <img class="button_bot-image" src="img/Projects/github_bot.png"
+                                                alt="GitHub" />
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="btn-close"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section -->
+            <section id="about" class="element_anim about-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Sobre mí</h2>
+                        <p class="section-subtitle">Lo que soy y las herramientas que me impulsan</p>
+                    </div>
+                    <div class="content">
+                        <div class="about-container">
+                            <div class="about-grid">
+                                <div class="about_img-container zoom-element">
+                                    <img src="img/LOGO_PAO/paolaL_a.png" alt="">
+                                    <div class="about-badge"></div>
+                                </div>
+                                <div class="about-content">
+                                    <div class="arrow-buttons">
+                                        <button class="arrow-button prev-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                            </svg>
+                                        </button>
+                                        <button class="arrow-button next-button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <h3 class="name"></h3>
+                                        <p class="designation"></p>
+                                        <p class="quote"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="skills" class="element_anim  section-grid">
+                <div class="section-container">
+                    <h1 class="t-bot">Skills</h1>
+                    <div class="skills">
+                        <div class="marquee-container">
+                            <!-- Cards Moving Right -->
+                            <div class="legend-item qa" data-category="qa-aut">QA-Automation</div>
+
+                            <div class="marquee-track marquee-right">
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"> </div>
+                                        <img src="img/Tecnologias/selenium.png" alt="selenium icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Dominio aplicado a proyectos</h3>
+                                            <p>Selenium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/postman.png" alt="postman icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Dominio avanzado aplicado en entornos profesionales</h3>
+                                            <p>Postman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/jmeter.png" alt="jmeter icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Explorando nuevas posibilidades</h3>
+                                            <p>Jmeter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/sql.png" alt="sql icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Capacidad para crear valor</h3>
+                                            <p>SQL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/python.png" alt="python icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Resolviendo desafíos complejos</h3>
+                                            <p>Python</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/java.png" alt="java icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Descubriendo el potencial</h3>
+                                            <p>Java</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/git.png" alt="git icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Mejorando con cada proyecto</h3>
+                                            <p>Git</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/ISTQB.png" alt="istqb icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Visión integral y práctica</h3>
+                                            <p>ISTQB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Duplicate for Seamless Loop -->
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"> </div>
+                                        <img src="img/Tecnologias/selenium.png" alt="selenium icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Dominio aplicado a proyectos</h3>
+                                            <p>Selenium</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/postman.png" alt="postman icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Dominio avanzado aplicado en entornos profesionales</h3>
+                                            <p>Postman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/jmeter.png" alt="jmeter icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Explorando nuevas posibilidades</h3>
+                                            <p>Jmeter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/sql.png" alt="sql icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Capacidad para crear valor</h3>
+                                            <p>SQL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/python.png" alt="python icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Resolviendo desafíos complejos</h3>
+                                            <p>Python</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/java.png" alt="java icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Descubriendo el potencial</h3>
+                                            <p>Java</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/git.png" alt="git icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Mejorando con cada proyecto</h3>
+                                            <p>Git</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk qa-aut" data-category="qa">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/ISTQB.png" alt="istqb icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Visión integral y práctica</h3>
+                                            <p>ISTQB</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Cards Moving Left -->
+                            <div class="legend-item web" data-category="web-dev">Desarrollo Web</div>
+
+                            <div class="marquee-track marquee-left">
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/html.png" alt="html icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Precisión y estrategia técnica</h3>
+                                            <p>HTML</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/css.png" alt="css icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Innovación con experiencia</h3>
+                                            <p>CSS3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/js.png" alt="javascript icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Desarrollando confianza técnica</h3>
+                                            <p>Javascript</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/VSCode.png" alt="vscode icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Experticia probada en acción</h3>
+                                            <p>VSCode</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/pandas.png" alt="pandas icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Aprendiendo mientras creo</h3>
+                                            <p>PANDAS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/numpy.png" alt="numpy icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3> Aprendiendo con práctica</h3>
+                                            <p>NUMPY</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/ISO8583.png" alt="iso8583 icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Aplicando conceptos en contextos reales</h3>
+                                            <p>ISO-8583</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/IA.png" alt="ia icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Optimizando procesos y resultados</h3>
+                                            <p>IA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Duplicate for Seamless Loop -->
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/html.png" alt="html icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Precisión y estrategia técnica</h3>
+                                            <p>HTML</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/css.png" alt="css icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Innovación con experiencia</h3>
+                                            <p>CSS3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage60); --to-deg:var(--value-percentage60);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/js.png" alt="javascript icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Desarrollando confianza técnica</h3>
+                                            <p>Javascript</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk web-dev" data-category="web">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage90); --to-deg:var(--value-percentage90);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/VSCode.png" alt="vscode icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Experticia probada en acción</h3>
+                                            <p>VSCode</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage50); --to-deg:var(--value-percentage50);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/pandas.png" alt="pandas icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Aprendiendo mientras creo</h3>
+                                            <p>PANDAS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage40); --to-deg:var(--value-percentage40);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/numpy.png" alt="numpy icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3> Aprendiendo con práctica</h3>
+                                            <p>NUMPY</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage70); --to-deg:var(--value-percentage70);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/ISO8583.png" alt="iso8583 icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Aplicando conceptos en contextos reales</h3>
+                                            <p>ISO-8583</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scroll-card ch-grid">
+                                    <div class="circle item-sk trend" data-category="trends">
+                                        <div class="mask half">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="mask full"
+                                            style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            <div class="fill"
+                                                style="transform:var(--value-percentage80); --to-deg:var(--value-percentage80);">
+                                            </div>
+                                        </div>
+                                        <div class="inside-circle"></div>
+                                        <img src="img/Tecnologias/IA.png" alt="ia icon" class="ch-img">
+                                        <div class="ch-info">
+                                            <h3>Optimizando procesos y resultados</h3>
+                                            <p>IA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legend-item trends" data-category="trend">Tendencias Tech</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section id="blog" class="blog-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">BLOG</h2>
+                        <p class="section-subtitle">Ideas, tips y experiencias</p>
+                    </div>
+
+                    <div class="blog-grid">
+
+                        <article class="blog-post">
+                            <div class="blog-image">
+                                <img src="img/post/qassitant_1.png" alt="Blog post 1">
+                                <div class="blog-date">Julio 15, 2025</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Crear planes de prueba con IA usando QAssitant</h3>
+                                <p class="blog-excerpt">¿Aún inviertes horas en construir planes de prueba desde
+                                    cero?¿Te enfrentas a entregas ajustadas sin tiempo suficiente para documentar…</p>
+                                <a href="https://paolozada.com/info/planes-de-prueba-con-ia/" target="_blank"
+                                    class="blog-link">Leer más
+                                    →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="blog-image">
+                                <img src="img/Projects/job.png" alt="Blog post 2">
+                                <div class="blog-date">Septiembre 30, 2025</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">¿Cómo convertir un pequeño bot en un servicio REST?</h3>
+                                <p class="blog-excerpt">¿Tienes un bot en Python y quieres llevarlo al siguiente nivel?
+                                    🚀 Descubre cómo exponerlo como servicio REST con FastAPI y desplegarlo ...</p>
+                                <a href="https://paolozada.com/info/convertir-un-pequeno-bot-en-un-servicio-rest/"
+                                    target="_blank" class="blog-link">Leer más →</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-post">
+                            <div class="blog-image">
+                                <img src="img/post/make.png" alt="Blog post 3">
+                                <div class="blog-date">Octubre 1, 2025</div>
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Transforma tareas repetitivas en flujos inteligentes 🚀</h3>
+                                <p class="blog-excerpt">Probé Make y realmente me sorprendió. Es una herramienta que
+                                    conecta aplicaciones de manera sencilla, permite crear flujos de trabajo ...</p>
+                                <a href="https://paolozada.com/info/descubre-como-make-transforma-tareas-repetitivas-en-flujos-inteligentes-%f0%9f%9a%80/"
+                                    target="_blank" class="blog-link">Leer más →</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="section-cta">
+                        <a href="https://paolozada.com/info/blog/" target="_blank" class="button"><img
+                                class="button_bot-image" src="img/Links/Blog_I.png" alt="" />
+                            Ver Todo</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section section-grid">
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2 class="section-title">Escríbeme</h2>
+                        <p class="section-subtitle">A un clic de distancia</p>
+                    </div>
+                    <div class="container_cont element_anim">
+                        <div class="card">
+                            <div class="face face1">
+                                <div class="content left-element">
+                                    <img src="/img/LOGO_PAO/bg_cup_contact.png">
+                                    <h3>¿Nos tomamos un café virtual?</h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <p>Ya sea para trabajar juntos o charlar sobre el mundo tech, puedes escribirme
+                                        cuando
+                                        quieras. Siempre estoy buscando nuevas conexiones y retos que me inspiren.</p>
+                                    <div class="contact-content">
+                                        <div class="section-cta">
+                                            <a href="https://paolozada.com/info/contact" target="_blank"
+                                                class="button"><img class="button_bot-image"
+                                                    src="img/Links/contacto_I.png" alt="contact icon PL" /> Hablemos</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer_post text-center text-lg-center" id="footer">
+            <div class="container p-2">
+                <div class="row my-4">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <div class="bg-transparent shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                            style="width: 150px; height: 150px;">
+                            <img src="img/LOGO_PAO/iconPL.webp" height="170" alt="Paola Lozada logo"
+                                loading="paolalozada" />
+                        </div>
+                        <section class="mt-8">
+                            <!-- Grid row-->
+                            <div class="row text-center d-flex justify-content-center pt-8 footer_links">
+                                <!-- Grid column -->
+                                <div class="col-md-4">
+                                    <p class="text-uppercase font-weight-bold">
+                                        <a href="#" class="blog-link">Portafolio</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-uppercase font-weight-bold">
+                                        <a href="https://appqa.paolozada.com/" target="_blank"
+                                            class="blog-link">QAssistant</a>
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-uppercase font-weight-bold">
+                                        <a href="https://paolozada.com/info/contact" target="_blank"
+                                            class="blog-link">Contacto</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+
+                        <p><i class="bi bi-geo-alt-fill"></i> Cundinamarca, Colombia</p>
+                        <p><i class="bi bi-telephone-fill"></i> +571 3118534588</p>
+                        <p class="mail"><a href="mailto:dev@paolozada.com"><i class="bi bi-envelope-fill"></i>
+                                dev@paolozada.com</a></p>
+                        <div class="container_social">
+                            <div class="social-icons">
+
+                                <div class="social github"><a href="https://github.com/PaoLozada" target="_blank">
+                                        <div class="tooltip">GitHub</div>
+                                        <div class="icon">
+                                            <i class="bi bi-github"></i>
+                                        </div>
+                                </div></a>
+                                <div class="social linkedin"><a href="https://www.linkedin.com/in/paola-a-lozada-g/"
+                                        target="_blank">
+                                        <div class="tooltip">Linkedin</div>
+                                        <div class="icon">
+                                            <i class="bi bi-linkedin"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="social twitter"><a href="https://twitter.com/PaolaALoG" target="_blank">
+                                        <div class="tooltip">X</div>
+                                        <div class="icon">
+                                            <i class="bi bi-twitter"></i>
+                                        </div>
+                                </div></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <div class="post-it" style="text-align:center">
+                            <h2>¡Hola!</h2>
+                            <p>Aquí encontrarás un poco de lo que hago y mucho de lo que disfruto construir. Creo en la
+                                tecnología que conecta, inspira y transforma.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                Copyright © 2025 | Creado con 💜 por
+                <a class="text-white" href="https://paolozada.com">Paola Lozada</a>
+            </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -757,13 +1534,7 @@
         <script src=" js/progress.js"></script>
         <script src=" js/execute_bots.js"></script>
         <script src=" js/bots_apis.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src=" js/scripts.js"></script>
-
-
+    </div>
 </body>
-
-
-
-
-
-</html>

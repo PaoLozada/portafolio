@@ -1,13 +1,6 @@
 //Init
 const spans = document.querySelectorAll('.word span');
-let now = document.querySelector('.now');
 let finish = true;
-
-//Type about
-let speed = 75;
-let hOne = document.querySelector('.aboutTitle');
-let par = document.querySelector('.aboutDes');
-let delay = hOne.innerHTML.length * speed + speed;
 
 //Modals
 let myModal
@@ -23,19 +16,25 @@ let current_Modal
     //Configurate Error_Modal
 const MODAL_ERROR = document.getElementById('modalAgain')
 
-//Accordion Run
+//Run bot
 let runapp1 = document.querySelector('.runapp1')
 let runapp2 = document.querySelector('.runapp2')
 let runapp3 = document.querySelector('.runapp3')
+let runapp4 = document.querySelector('.runapp4')
 
 //Inputs
 let input_job = "QA";
 let input_location = "Cundinamarca";
+let input_name_video = "QA and IA"
+
+//Tables
+let resultBSJ = document.getElementById("resultBSJ");
+let resultBNP = document.getElementById('resultBNP');
+let resultBSV = document.getElementById('resultBSV');
+
 
 //checkbox
 let option_time = "4";
-let resultBSJ = document.getElementById("resultBSJ");
-let resultBNP = document.getElementById('resultBNP');
 let selectItem = "4";
 let categorys = "Color";
 let checbox_var

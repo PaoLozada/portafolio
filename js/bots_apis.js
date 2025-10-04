@@ -47,11 +47,10 @@ const newProduct = async() => {
     }
 };
 
-
 //Bot Function Serarch Job
 const searchJob = async() => {
     try {
-        const respon = await fetch('https://botpaolozada.onrender.com/botSearchJobs?city=' + input_location + '&filter_date=' + selectItem + '&filter_job=' + input_job);
+        const respon = await fetch('https://botpaolozada.up.railway.app/botSearchJobs?city=' + input_location + '&filter_date=' + selectItem + '&filter_job=' + input_job);
         const data = await respon.json();
         console.log(data);
         let tabledataBSJ = ``;
@@ -69,6 +68,33 @@ const searchJob = async() => {
         resultBSJ.innerHTML = tabledataBSJ;
         myModal.hide();
         openModal('botSearchJob');
+    } catch (error) {
+        myModal.hide();
+        openModal('modalError');
+
+    }
+};
+
+//Bot Function Serarch Job
+const searchViews = async() => {
+    try {
+        const respon = await fetch('https://botpaolozada.up.railway.app/botSearchViews?name_video=' + input_name_video);
+        const data = await respon.json();
+        console.log(data);
+        let tabledataBSV = ``;
+        let view_item = data.Views.Youtube[0];
+        console.log(view_item)
+        if (view_item != 'NO EXISTE') {
+            tabledataBSV += `<tr>
+            <td class='centered'>The video containing: ${input_name_video} has ${view_item} </td> 
+            </tr>`;
+        } else { tabledataBSV += `<tr>
+        <td class='centered'>I'm sorry, I couldn't find any match for a video containing: "${input_name_video}" in its name.</td> 
+        </tr>`; }
+
+        resultBSV.innerHTML = tabledataBSV;
+        myModal.hide();
+        openModal('botSearchViews');
     } catch (error) {
         myModal.hide();
         openModal('modalError');
