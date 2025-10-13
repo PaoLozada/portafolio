@@ -1,31 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-*::selection {
-  background: var(--color-primary-t);
-  color: var(--color-bg);
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  /*background-image: url(../img/FondosAnimados/fondo_3.png);
-  background-size: contain;
-  background-attachment: scroll;
-  background-position: center;
-  transition: background-position 0.1s linear;*/
-  background-color: var(--color-bg);
-}
-
-.filter_body {
-  width: 100%;
-  height: 100%;
-  background-color: var(--filter_body);
-}
-
 :root {
   --filter_body: rgba(17, 17, 17, 0.98);
   /* Paleta oscura (default) */
@@ -77,11 +49,11 @@ body {
   --value-percentage80: rotate(144deg);
   --value-percentage90: rotate(162deg);
   --value-percentage100: rotate(180deg);
-  --to-deg:
+  --to-deg: 10deg;
 }
 
 /* Paleta clara */
-body.light {
+.light {
   --filter_body: rgba(244, 244, 244, 0.87);
   --color-bg-rgb: 240, 240, 240;
   /* #F5F5F5 */
@@ -131,10 +103,36 @@ body.light {
   --value-percentage80: rotate(144deg);
   --value-percentage90: rotate(162deg);
   --value-percentage100: rotate(180deg);
-  --to-deg:
+  --to-deg: 10deg;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+*::selection {
+  background: var(--color-primary-t);
+  color: var(--color-bg);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  /*background-image: url(../img/FondosAnimados/fondo_3.png);
+  background-size: contain;
+  background-attachment: scroll;
+  background-position: center;
+  transition: background-position 0.1s linear;*/
+  background-color: var(--color-bg);
+}
+
+.filter_body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--filter_body);
+}
 
 /******************/
 @font-face {
@@ -168,19 +166,44 @@ body.light {
 }
 
 /************modo*************/
+body {
+  --icon-light: "🔆";
+  --icon-dark: "🌙";
+}
+
+body.light {
+  --icon: var(--icon-dark);
+}
+
+body:not(.light) {
+  --icon: var(--icon-light);
+}
+
+#toggle-theme::after {
+  content: var(--icon);
+  font-size: 1rem;
+}
+
+/* Oculta el texto original del botón */
+#toggle-theme {
+  font-size: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 button#toggle-theme {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  padding: 0.6rem 1rem;
+  padding: 0.1rem 0.2rem;
   border: none;
   border-radius: 50px;
-  border-bottom: solid 5px var(--color-primary-t);
-  border-right: solid 5px var(--color-primary-t);
+  border-bottom: solid 3px var(--color-primary-t);
+  border-right: solid 3px var(--color-primary-t);
   color: var(--color-text);
-  background-color: var(--color-bg);
+  background-color: transparent;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
   box-shadow: 14px 14px 12px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease, transform 0.2s ease;
@@ -188,8 +211,8 @@ button#toggle-theme {
 }
 
 button#toggle-theme:hover {
-  border-bottom: solid 2px var(--color-primary-t);
-  border-right: solid 2px var(--color-primary-t);
+  border-bottom: solid 0.1px var(--color-primary-t);
+  border-right: solid 0.1px var(--color-primary-t);
   transform: translateY(3px);
 }
 
@@ -245,7 +268,7 @@ button#toggle-theme:hover {
 /* Hero Section */
 
 #home {
-  background-image: url(/img/FondosAnimados/fondo_1_2.png);
+  background-image: url(/img/FondosAnimados/fondo_1_2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -405,6 +428,8 @@ button#toggle-theme:hover {
     radial-gradient(circle at 30% 30%, var(--color-bg2), transparent 40%),
     radial-gradient(circle at 70% 70%, rgba(var(--color-neutral-light-rgb), 0.1), transparent 40%);
   background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .section-container {
@@ -1008,6 +1033,7 @@ button#toggle-theme:hover {
   color: var(--color-text);
   text-shadow: 1px 1px #ac9939, 2px 2px #998833, 3px 3px #86772d, 4px 4px #82742b, 5px 5px #7e702a, 6px 6px #7a6d29, 7px 7px #776928, 8px 8px #736626, 9px 9px #6f6325, 10px 10px #6b5f24, 10px 10px 30px rgba(0, 0, 0, 0.7);
 }
+
 
 /******************video***********************/
 .l-hero-video {

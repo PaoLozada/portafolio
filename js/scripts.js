@@ -85,30 +85,33 @@ window.addEventListener('scroll', () => {
 });*/
 /********************************nav***************/
 document.addEventListener("DOMContentLoaded", function () {
-    var tooltip = document.getElementsByClassName("tooltip-img")[0];
-    var links = document.querySelectorAll(".floating-menu a");
+    const tooltip = document.getElementsByClassName("tooltip-img")[0];
+    const links = document.querySelectorAll(".floating-menu a");
 
-    for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener("mouseenter", function (e) {
-            var imgSrc = this.getAttribute("data-tooltip");
+    function setupTooltip(link) {
+        link.addEventListener("mouseenter", function (e) {
+            const imgSrc = link.getAttribute("data-tooltip");
             if (imgSrc) {
-                tooltip.innerHTML = '<img src="' + imgSrc + '" alt="tooltip">';
+                tooltip.innerHTML = `<img src="${imgSrc}" alt="tooltip">`;
                 tooltip.style.display = "block";
-                tooltip.style.top = (e.clientY - 100) + "px";
-                tooltip.style.left = (e.clientX - 100) + "px";
+                tooltip.style.top = e.clientY - 100 + "px";
+                tooltip.style.left = e.clientX - 100 + "px";
             }
         });
 
-        links[i].addEventListener("mousemove", function (e) {
-            tooltip.style.top = (e.clientY - 100) + "px";
-            tooltip.style.left = (e.clientX - 100) + "px";
+        link.addEventListener("mousemove", function (e) {
+            tooltip.style.top = e.clientY - 100 + "px";
+            tooltip.style.left = e.clientX - 100 + "px";
         });
 
-        links[i].addEventListener("mouseleave", function () {
+        link.addEventListener("mouseleave", function () {
             tooltip.style.display = "none";
         });
     }
+
+    links.forEach(setupTooltip);
 });
+
 
 /*señalar section*/
 
@@ -156,7 +159,7 @@ spans.forEach((span, idx) => {
     // Initial animation
     setTimeout(() => {
         span.classList.add('active');
-    }, 750 * (idx + 1))
+    }, 750 * (idx + 1));
 });
 
 
