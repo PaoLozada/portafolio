@@ -254,7 +254,7 @@ const video = document.getElementById("video_qa");
 
 // Cuando se abre el modal
 videoModal.addEventListener("shown.bs.modal", () => {
-    video.src = "https://paolozada.com/info/wp-content/uploads/2025/07/Version_3.mp4";
+    video.src = "https://paolozada.com/info/wp-content/uploads/2025/11/qasisstant.mp4";
     video.load();
     video.play();
 });
